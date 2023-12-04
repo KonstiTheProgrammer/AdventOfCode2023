@@ -4,46 +4,16 @@ class Game {
     public Numbers: Array<number> = [];
     public Points: number = 0;
     public Wins: number = 0;
-
+    public AmountOfTicket = 1;
     constructor() {
     }
 }
 
-interface IQueue<T> {
-    enqueue(item: T): void;
+const games = new Array<Game>();
 
-    dequeue(): T | undefined;
-
-    size(): number;
-}
-
-class Queue<T> implements IQueue<T> {
-    private storage: T[] = [];
-
-    constructor(private capacity: number = Infinity) {
-    }
-
-    enqueue(item: T): void {
-        if (this.size() === this.capacity) {
-            throw Error("Queue has reached max capacity, you cannot add more items");
-        }
-        this.storage.push(item);
-    }
-
-    dequeue(): T | undefined {
-        return this.storage.shift();
-    }
-
-    size(): number {
-        return this.storage.length;
-    }
-}
-
-
-const input = await Deno.readTextFile("input.txt").then((res) =>
+const input = await Deno.readTextFile("input2.txt").then((res) =>
     res.split("\r\n").map((line) => line.split(" ").filter(k => k)));
 
-const games: Array<Game> = [];
 var output = 0;
 
 input.forEach(line => {
@@ -66,19 +36,15 @@ input.forEach(line => {
     games.push(game);
 })
 
-
-let queue: IQueue<Game> = new Queue<Game>();
-queue.enqueue(games[0]);
 let numberOfScratchCards = 0;
 
-while (queue.size() > 0) {
-    let game = queue.dequeue()!;
-    numberOfScratchCards++;
-    games.slice(game.gameId - 1, game.gameId + game.Wins).forEach(game => {
-        console.log(game);
-        queue.enqueue(game);
-    });
-}
+games.forEach(game => {
+    numberOfScratchCards += game.AmountOfTicket;
+    games.slice(game.gameId, game.gameId + game.Wins).forEach(k => {
+        k.AmountOfTicket += game.AmountOfTicket
+    })
+    console.log(game.AmountOfTicket);
+})
 
 
 console.log("level 1: ", games.reduce((a, b) => a + b.Points, 0));
