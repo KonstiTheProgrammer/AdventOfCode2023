@@ -8,7 +8,6 @@ const isSymbol = (s: string) => {
 }
 
 const input2: Array<Array<Element>> = []
-
 const numbs: Array<GroupOfNumber> = [];
 
 for (let i = 0; i < input.length; i++) {
