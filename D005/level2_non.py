@@ -4,7 +4,7 @@ class Blueprint:
 	des_start: int
 	des_end: int
 	dep_start: int
-	dep_end: int
+	dep_end: int500000000
 	step: int
 
 	def __init__(self, des_start, des_end, dep_start, dep_end, step):
@@ -21,7 +21,7 @@ class Blueprint:
 input = []
 numbers = "0123456789"
 
-with open('D005/input.txt', 'r') as f:
+with open('D005/input2.txt', 'r') as f:
 	input = [line.split(" ") for line in f.read().splitlines() if line != '']
 
 seeds = [int(i) for i in input[0][1:]]
@@ -39,7 +39,7 @@ for i in input:
 seed_ranges = []
 
 for i in range(0,len(seeds),2):
-	seed_ranges.append([seeds[i], seeds[i+1]])
+	seed_ranges.append([seeds[i], seeds[i] + seeds[i+1]])
  
  
 
@@ -50,7 +50,7 @@ way = []
 for i in mapi:
 	listo = []
 	for j in i:
-		listo.append(Blueprint(j[1], j[1] + j[2], j[0], j[0] + j[2], j[2]))
+		listo.append(Blueprint(j[0], j[0] + j[2], j[1], j[1] + j[2], j[2]))
 	listo.sort(key=lambda x: x.des_start)
 	ranges.append(listo)
  
@@ -59,20 +59,17 @@ ranges.reverse()
 print(ranges)
 
 
-i = 46
+i = 15000000
 while(True):
 	print("next: " , i)
 	search_val = i
 	for map in ranges:
-		print(search_val)
 		for row in map:
 			if row.des_start <= search_val <= row.des_end:
-				print(row)
-				search_val = search_val - row.des_start + row.dep_start
+				search_val = search_val + row.dep_start - row.des_start
 				break
-	
 	for ran in seed_ranges:
 		if ran[0] <= search_val <= ran[1]:
 			print("answer: " , search_val)
 			exit()
-	break
+	i += 1
