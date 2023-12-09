@@ -1,0 +1,12 @@
+C:\Users\Konst\repos\AdventOfCode2023\CodingsHelpers\bin\Debug\net8.0\CodingsHelpers.deps.json
+C:\Users\Konst\repos\AdventOfCode2023\CodingsHelpers\bin\Debug\net8.0\CodingsHelpers.dll
+C:\Users\Konst\repos\AdventOfCode2023\CodingsHelpers\bin\Debug\net8.0\CodingsHelpers.pdb
+C:\Users\Konst\repos\AdventOfCode2023\CodingsHelpers\obj\Debug\net8.0\CodingsHelpers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Konst\repos\AdventOfCode2023\CodingsHelpers\obj\Debug\net8.0\CodingsHelpers.AssemblyInfoInputs.cache
+C:\Users\Konst\repos\AdventOfCode2023\CodingsHelpers\obj\Debug\net8.0\CodingsHelpers.AssemblyInfo.cs
+C:\Users\Konst\repos\AdventOfCode2023\CodingsHelpers\obj\Debug\net8.0\CodingsHelpers.csproj.CoreCompileInputs.cache
+C:\Users\Konst\repos\AdventOfCode2023\CodingsHelpers\obj\Debug\net8.0\CodingsHelpers.sourcelink.json
+C:\Users\Konst\repos\AdventOfCode2023\CodingsHelpers\obj\Debug\net8.0\CodingsHelpers.dll
+C:\Users\Konst\repos\AdventOfCode2023\CodingsHelpers\obj\Debug\net8.0\refint\CodingsHelpers.dll
+C:\Users\Konst\repos\AdventOfCode2023\CodingsHelpers\obj\Debug\net8.0\CodingsHelpers.pdb
+C:\Users\Konst\repos\AdventOfCode2023\CodingsHelpers\obj\Debug\net8.0\ref\CodingsHelpers.dll

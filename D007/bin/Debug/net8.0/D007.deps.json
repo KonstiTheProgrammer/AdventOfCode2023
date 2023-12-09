@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "D007/1.0.0": {
+        "dependencies": {
+          "CodingsHelpers": "1.0.0"
+        },
+        "runtime": {
+          "D007.dll": {}
+        }
+      },
+      "CodingsHelpers/1.0.0": {
+        "runtime": {
+          "CodingsHelpers.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "D007/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CodingsHelpers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
