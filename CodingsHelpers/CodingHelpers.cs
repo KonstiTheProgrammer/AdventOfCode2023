@@ -336,6 +336,13 @@ public static class Extension
         list.Add(element);
         return list;
     }
+    
+    public static List<T> AddReturn<T>(this List<T> list, List<T> elements)
+    {
+        list.AddRange(elements);
+        return list;
+    }
+
 
     public static List<T> GetFromTo<T>(this List<T> list, int from, int two) => list.GetRange(from, from - two);
 

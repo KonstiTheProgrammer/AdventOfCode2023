@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CodingsHelpers")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98b8490f6fb97449e5537f862b226786c4197945")]
 [assembly: System.Reflection.AssemblyProductAttribute("CodingsHelpers")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CodingsHelpers")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
